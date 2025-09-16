@@ -153,7 +153,7 @@
           {
             "position": {
               "x": 252.5,
-              "y": 180
+              "y": 170
             },
             "size": {
               "width": 140,
@@ -272,8 +272,8 @@
           },
           {
             "position": {
-              "x": 86.25,
-              "y": -40
+              "x": -46.25,
+              "y": -260
             },
             "size": {
               "width": 112.5,
@@ -389,8 +389,8 @@
           },
           {
             "position": {
-              "x": 266.25,
-              "y": -40
+              "x": 190,
+              "y": -570
             },
             "size": {
               "width": 112.5,
@@ -506,8 +506,8 @@
           },
           {
             "position": {
-              "x": 474,
-              "y": -40
+              "x": 670,
+              "y": -620
             },
             "size": {
               "width": 112.5,
@@ -623,8 +623,8 @@
           },
           {
             "position": {
-              "x": 99.99999999999986,
-              "y": 290.00000000000006
+              "x": 728.75,
+              "y": 270
             },
             "size": {
               "width": 110,
@@ -743,8 +743,8 @@
           },
           {
             "position": {
-              "x": 490,
-              "y": 110.00000000000006
+              "x": 378.75,
+              "y": -410
             },
             "size": {
               "width": 350,
@@ -863,8 +863,8 @@
           },
           {
             "position": {
-              "x": 86.25,
-              "y": 520
+              "x": 710,
+              "y": 130
             },
             "size": {
               "width": 120,
@@ -885,6 +885,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -968,7 +969,6 @@
               ]
             },
             "id": "fed63480-980a-4162-8a4c-c1f86753f58c",
-            "zIndex": 8,
             "data": {
               "type": "tm.Store",
               "name": "Configuration File",
@@ -988,7 +988,7 @@
           {
             "position": {
               "x": 10,
-              "y": 620
+              "y": 440
             },
             "size": {
               "width": 120,
@@ -1009,6 +1009,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -1092,7 +1093,6 @@
               ]
             },
             "id": "ac769e9a-d0a0-4608-922b-3a64b5f10daf",
-            "zIndex": 9,
             "data": {
               "type": "tm.Store",
               "name": "User Logs",
@@ -1130,6 +1130,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -1213,7 +1214,6 @@
               ]
             },
             "id": "5784a251-3d0d-46d2-abf0-0fc4e0d10347",
-            "zIndex": 10,
             "data": {
               "type": "tm.Process",
               "name": "Log Server",
@@ -1228,112 +1228,6 @@
               "privilegeLevel": "",
               "threats": []
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Read Review",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Read Review"
-            ],
-            "id": "87957734-44e3-4758-98e3-116bc9385f47",
-            "source": {
-              "x": 140,
-              "y": 20
-            },
-            "target": {
-              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
-              "port": "a35fc535-bdf8-4906-900d-f8d6d73562e4"
-            },
-            "vertices": [
-              {
-                "x": 230,
-                "y": 90
-              },
-              {
-                "x": 240,
-                "y": 100
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Query the database for review",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Query the database for review"
-            ],
-            "id": "0daa0306-9ebe-445a-b551-92d75d2a699e",
-            "source": {
-              "x": 320,
-              "y": 280
-            },
-            "target": {
-              "x": 320,
-              "y": 550
-            },
-            "vertices": [
-              {
-                "x": 320,
-                "y": 340
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -1406,7 +1300,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "User gets review",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1419,7 +1313,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "User gets review"
             ],
             "id": "8f082f32-b1eb-4263-9d09-38bb7e26fbfe",
             "source": {
@@ -1434,18 +1328,460 @@
               {
                 "x": 210,
                 "y": 230
+              },
+              {
+                "x": 20,
+                "y": 170
+              },
+              {
+                "x": -10,
+                "y": 140
               }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Receive email about request performed ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Receive email about request performed "
             ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
+            "id": "694b5ec2-375b-4bd2-9b6a-84528112db35",
+            "source": {
+              "x": 330,
+              "y": 180
+            },
+            "target": {
+              "cell": "998edd3f-937c-4fea-ae86-4dd25256bce3",
+              "port": "56fb6753-6037-4e09-a687-c0083390447f"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 40
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Query the database for review",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Query the database for review"
+            ],
+            "id": "0daa0306-9ebe-445a-b551-92d75d2a699e",
+            "source": {
+              "x": 320,
+              "y": 270
+            },
+            "target": {
+              "x": 320,
+              "y": 550
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Read Review/Write Reviews/Remove Existing Reviews",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Read Review/Write Reviews/Remove Existing Reviews"
+            ],
+            "id": "9cc1dabc-435c-451c-aacc-f2bc36298059",
+            "source": {
+              "cell": "bc1b52c0-df72-406d-b6bf-cc5fcfd285ac",
+              "port": "0ca7b4ba-f7ce-4d1e-9415-4a96086dfbc8"
+            },
+            "target": {
+              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
+              "port": "a35fc535-bdf8-4906-900d-f8d6d73562e4"
+            },
+            "vertices": [
+              {
+                "x": 455,
+                "y": 40
+              },
+              {
+                "x": 560,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Read Review",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Read Review"
+            ],
+            "id": "87957734-44e3-4758-98e3-116bc9385f47",
+            "source": {
+              "cell": "86e5944f-a952-41f9-a3bb-11642f8ee4ac",
+              "port": "56fb6753-6037-4e09-a687-c0083390447f"
+            },
+            "target": {
+              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
+              "port": "a35fc535-bdf8-4906-900d-f8d6d73562e4"
+            },
+            "vertices": [
+              {
+                "x": 230,
+                "y": 90
+              },
+              {
+                "x": 240,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Authenticate Identity",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Authenticate Identity"
+            ],
+            "id": "1f7b91b6-c77c-4baa-9f5a-1ca2126eb10b",
+            "source": {
+              "x": 310,
+              "y": -540
+            },
+            "target": {
+              "cell": "bc1b52c0-df72-406d-b6bf-cc5fcfd285ac",
+              "port": "a35fc535-bdf8-4906-900d-f8d6d73562e4"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Authenticate Identity",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Authenticate Identity"
+            ],
+            "id": "454ca435-9fee-4525-8b58-b2441e283b35",
+            "source": {
+              "cell": "f066cd32-1f44-4782-a24b-16d223435807",
+              "port": "56fb6753-6037-4e09-a687-c0083390447f"
+            },
+            "target": {
+              "cell": "bc1b52c0-df72-406d-b6bf-cc5fcfd285ac",
+              "port": "a35fc535-bdf8-4906-900d-f8d6d73562e4"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Configure System",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Configure System"
+            ],
+            "id": "b915bc74-40d1-41f8-8fd1-a3c03cfe771d",
+            "source": {
+              "x": 770,
+              "y": 190
+            },
+            "target": {
+              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
+              "port": "a0d7eb03-e1ac-4f6c-8081-4d40b6ed7f79"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Add review to database",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Add review to database"
+            ],
+            "id": "d123ca55-c90e-407a-8ad9-eaf097bb06e5",
+            "source": {
+              "x": 320,
+              "y": 270
+            },
+            "target": {
+              "cell": "0a579942-55af-426e-b652-5fed7219944f",
+              "port": "80c7622a-3816-4762-b2fb-a0c0e4c5e0f0"
+            },
+            "vertices": [
+              {
+                "x": 440,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Remove reviews",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Remove reviews"
+            ],
+            "id": "6e8c3d55-4b38-4fec-98fe-b29e4867ba0e",
+            "source": {
+              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
+              "port": "0ca7b4ba-f7ce-4d1e-9415-4a96086dfbc8"
+            },
+            "target": {
+              "cell": "0a579942-55af-426e-b652-5fed7219944f",
+              "port": "01680c56-bee0-4ba7-8c13-8548ac275e3b"
+            },
+            "vertices": [
+              {
+                "x": 140,
+                "y": 310
+              }
+            ]
           }
         ]
       }
