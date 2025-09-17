@@ -688,8 +688,8 @@
                 "text": "E-mail Server"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -786,12 +786,106 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "d88fbd62-110a-4075-b51f-b659ea312cdf",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "a58bfcf3-13e8-4535-9c9b-4ad9cf4fbfd8",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "c01cc57d-e283-464a-b3ee-0148976561fd",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                },
+                {
+                  "id": "167f479c-be32-4468-9f8d-f46256b29e95",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                },
+                {
+                  "id": "ff10a667-1a78-4f7e-b28e-424d3446c7b0",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                },
+                {
+                  "id": "a3b5978f-e42c-48d6-b4eb-f47bd47eff02",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1861,7 +1955,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Remove reviews",
+              "name": "Remove reviews/admin remove user reviews",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1874,7 +1968,7 @@
               "threats": []
             },
             "labels": [
-              "Remove reviews"
+              "Remove reviews/admin remove user reviews"
             ],
             "id": "6e8c3d55-4b38-4fec-98fe-b29e4867ba0e",
             "source": {
@@ -1887,8 +1981,16 @@
             },
             "vertices": [
               {
-                "x": 140,
-                "y": 310
+                "x": 60,
+                "y": 530
+              },
+              {
+                "x": 60,
+                "y": 590
+              },
+              {
+                "x": 80,
+                "y": 600
               }
             ]
           },
@@ -2382,12 +2484,163 @@
                 "y": 140
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Admin access private log information",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Admin access private log information"
+            ],
+            "id": "63d1e9ec-56f2-424b-aa71-3d4dd299ab31",
+            "source": {
+              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
+              "port": "49b8f2a5-b4b9-4b83-937a-e68d2e135976"
+            },
+            "target": {
+              "cell": "5784a251-3d0d-46d2-abf0-0fc4e0d10347",
+              "port": "5ca81251-929d-4265-aa59-3c171871257d"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send admin private log information",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Send admin private log information"
+            ],
+            "id": "11205cdd-beb6-40f8-8826-38252cef7928",
+            "source": {
+              "cell": "ac769e9a-d0a0-4608-922b-3a64b5f10daf",
+              "port": "47acd196-6860-4d55-a0ca-4ba6275772e6"
+            },
+            "target": {
+              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
+              "port": "0ca7b4ba-f7ce-4d1e-9415-4a96086dfbc8"
+            },
+            "vertices": [
+              {
+                "x": 200,
+                "y": 720
+              },
+              {
+                "x": 150,
+                "y": 770
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Recieve private log data, ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Recieve private log data, "
+            ],
+            "id": "42a6eaab-3738-4650-b6c4-7f9b9abbaa4e",
+            "source": {
+              "x": 420,
+              "y": 180
+            },
+            "target": {
+              "cell": "f066cd32-1f44-4782-a24b-16d223435807",
+              "port": "a2a99be5-0e1f-40e2-97cc-b507807d71f1"
+            },
+            "vertices": [
+              {
+                "x": 850,
+                "y": -150
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 15
+    "threatTop": 21
   }
 }
