@@ -2299,7 +2299,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Write Logs",
+              "name": "Write Logs/Access Logs/System Monitoring/Debugging",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2312,7 +2312,7 @@
               "threats": []
             },
             "labels": [
-              "Write Logs"
+              "Write Logs/Access Logs/System Monitoring/Debugging"
             ],
             "id": "a0002c2f-a108-46f3-947d-8932a4ced3e0",
             "source": {
@@ -2325,8 +2325,12 @@
             },
             "vertices": [
               {
-                "x": -175,
-                "y": 600
+                "x": -195,
+                "y": 700
+              },
+              {
+                "x": -150,
+                "y": 700
               }
             ]
           },
