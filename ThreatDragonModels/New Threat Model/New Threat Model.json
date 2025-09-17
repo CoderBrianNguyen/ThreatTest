@@ -863,8 +863,8 @@
           },
           {
             "position": {
-              "x": 900,
-              "y": -20
+              "x": 1030,
+              "y": -190
             },
             "size": {
               "width": 120,
@@ -987,8 +987,8 @@
           },
           {
             "position": {
-              "x": 10,
-              "y": 440
+              "x": 0,
+              "y": 575.0000000000002
             },
             "size": {
               "width": 120,
@@ -1111,12 +1111,12 @@
           },
           {
             "position": {
-              "x": -90,
-              "y": 240
+              "x": -340.0000000000001,
+              "y": 320
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 170,
+              "height": 180
             },
             "attrs": {
               "text": {
@@ -1359,7 +1359,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Receive email about request performed ",
+              "name": "Receive email about request performed/post removed by admin",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1372,7 +1372,7 @@
               "threats": []
             },
             "labels": [
-              "Receive email about request performed "
+              "Receive email about request performed/post removed by admin"
             ],
             "id": "694b5ec2-375b-4bd2-9b6a-84528112db35",
             "source": {
@@ -1387,6 +1387,10 @@
               {
                 "x": 330,
                 "y": 40
+              },
+              {
+                "x": 140,
+                "y": -200
               }
             ]
           },
@@ -1511,7 +1515,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Read Review",
+              "name": "Request to read a review",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1524,7 +1528,7 @@
               "threats": []
             },
             "labels": [
-              "Read Review"
+              "Request to read a review"
             ],
             "id": "87957734-44e3-4758-98e3-116bc9385f47",
             "source": {
@@ -1537,8 +1541,16 @@
             },
             "vertices": [
               {
-                "x": 230,
-                "y": 90
+                "x": 30,
+                "y": 40
+              },
+              {
+                "x": 70,
+                "y": 60
+              },
+              {
+                "x": 100,
+                "y": 60
               },
               {
                 "x": 240,
@@ -1826,7 +1838,13 @@
             "target": {
               "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
               "port": "a0d7eb03-e1ac-4f6c-8081-4d40b6ed7f79"
-            }
+            },
+            "vertices": [
+              {
+                "x": 980,
+                "y": 50
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1926,6 +1944,243 @@
                 "y": -360
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Admin request to access and edit configuration files",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Admin request to access and edit configuration files"
+            ],
+            "id": "f0708c81-1f92-4ebf-9b1d-a2ffe6720380",
+            "source": {
+              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
+              "port": "a0d7eb03-e1ac-4f6c-8081-4d40b6ed7f79"
+            },
+            "target": {
+              "cell": "fed63480-980a-4162-8a4c-c1f86753f58c",
+              "port": "c1cd6931-19a2-45c3-bb0b-1946f23d09e0"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Generate Log Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Generate Log Request"
+            ],
+            "id": "71dee8cd-9f02-4c12-a136-009f75535475",
+            "source": {
+              "x": 260,
+              "y": 240
+            },
+            "target": {
+              "cell": "5784a251-3d0d-46d2-abf0-0fc4e0d10347",
+              "port": "1a3fe2a9-6650-408d-8e22-02aad43766a3"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Write Logs",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Write Logs"
+            ],
+            "id": "a0002c2f-a108-46f3-947d-8932a4ced3e0",
+            "source": {
+              "cell": "5784a251-3d0d-46d2-abf0-0fc4e0d10347",
+              "port": "2bcdb93e-aa1d-4121-a247-19918482b5b7"
+            },
+            "target": {
+              "cell": "ac769e9a-d0a0-4608-922b-3a64b5f10daf",
+              "port": "dbc40366-2e9d-495f-b86c-4d621cc69605"
+            },
+            "vertices": [
+              {
+                "x": -175,
+                "y": 600
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send authenticated user non private logs",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Send authenticated user non private logs"
+            ],
+            "id": "0c1481c4-5744-4b12-a191-39169a897ede",
+            "source": {
+              "cell": "ac769e9a-d0a0-4608-922b-3a64b5f10daf",
+              "port": "c1cd6931-19a2-45c3-bb0b-1946f23d09e0"
+            },
+            "target": {
+              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
+              "port": "49b8f2a5-b4b9-4b83-937a-e68d2e135976"
+            },
+            "vertices": [
+              {
+                "x": -80,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Receive non private log data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Receive non private log data"
+            ],
+            "id": "98bc1c5c-478b-4d3c-a42f-8ca6a597913e",
+            "source": {
+              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
+              "port": "a35fc535-bdf8-4906-900d-f8d6d73562e4"
+            },
+            "target": {
+              "cell": "998edd3f-937c-4fea-ae86-4dd25256bce3",
+              "port": "56fb6753-6037-4e09-a687-c0083390447f"
+            }
           }
         ]
       }
