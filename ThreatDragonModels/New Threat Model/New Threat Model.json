@@ -863,8 +863,8 @@
           },
           {
             "position": {
-              "x": 710,
-              "y": 130
+              "x": 900,
+              "y": -20
             },
             "size": {
               "width": 120,
@@ -1656,51 +1656,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Configure System",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Configure System"
-            ],
-            "id": "b915bc74-40d1-41f8-8fd1-a3c03cfe771d",
-            "source": {
-              "x": 770,
-              "y": 190
-            },
-            "target": {
-              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
-              "port": "a0d7eb03-e1ac-4f6c-8081-4d40b6ed7f79"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Add review to database",
               "description": "",
               "outOfScope": false,
@@ -1780,6 +1735,195 @@
               {
                 "x": 140,
                 "y": 310
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Notify E-mail server about posted or removed review",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Notify E-mail server about posted or removed review"
+            ],
+            "id": "56bd16f1-37ea-4c21-b8fe-a8eeba069714",
+            "source": {
+              "cell": "0a579942-55af-426e-b652-5fed7219944f",
+              "port": "776a2057-52c4-4493-90d1-9a3291c41735"
+            },
+            "target": {
+              "cell": "21db5e5e-2d28-4dd6-ab24-1a6a48123cfa",
+              "port": "0ca7b4ba-f7ce-4d1e-9415-4a96086dfbc8"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Configure System",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Configure System"
+            ],
+            "id": "b915bc74-40d1-41f8-8fd1-a3c03cfe771d",
+            "source": {
+              "cell": "fed63480-980a-4162-8a4c-c1f86753f58c",
+              "port": "47acd196-6860-4d55-a0ca-4ba6275772e6"
+            },
+            "target": {
+              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
+              "port": "a0d7eb03-e1ac-4f6c-8081-4d40b6ed7f79"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "E-mail server sends email to web server for the user or author",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "E-mail server sends email to web server for the user or author"
+            ],
+            "id": "f2f50694-aa2f-4f08-80b0-1b6a4a93846e",
+            "source": {
+              "cell": "21db5e5e-2d28-4dd6-ab24-1a6a48123cfa",
+              "port": "a35fc535-bdf8-4906-900d-f8d6d73562e4"
+            },
+            "target": {
+              "cell": "836b313f-3d5b-4d6d-94ff-b03369ab89e9",
+              "port": "a0d7eb03-e1ac-4f6c-8081-4d40b6ed7f79"
+            },
+            "vertices": [
+              {
+                "x": 1130,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Internet Boundary"
+            ],
+            "id": "e55cfa1d-7509-438d-87dd-53e58220e8ed",
+            "source": {
+              "x": -200,
+              "y": 220
+            },
+            "target": {
+              "x": 860,
+              "y": -390
+            },
+            "vertices": [
+              {
+                "x": 150,
+                "y": 110
+              },
+              {
+                "x": 240,
+                "y": 190
+              },
+              {
+                "x": 370,
+                "y": 150
+              },
+              {
+                "x": 410,
+                "y": 30
+              },
+              {
+                "x": 410,
+                "y": -360
               }
             ]
           }
